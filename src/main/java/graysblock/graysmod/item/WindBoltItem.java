@@ -7,12 +7,13 @@ import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ProjectileItem;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class WindBoltItem extends ArrowItem {
+public class WindBoltItem extends ArrowItem implements ProjectileItem {
 
     public WindBoltItem(Item.Settings settings) {
         super(settings);

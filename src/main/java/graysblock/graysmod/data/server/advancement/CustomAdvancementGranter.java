@@ -6,7 +6,7 @@ import net.minecraft.advancement.AdvancementProgress;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 
-public class CustomAdvancementGranters {
+public class CustomAdvancementGranter {
 
     public static void grantPureAbsurdityAdvancement(ServerPlayerEntity player) {
         AdvancementEntry advancement = player.server.getAdvancementLoader().get(Identifier.of(GraysMod.MOD_ID, "graysmod/pure_absurdity"));

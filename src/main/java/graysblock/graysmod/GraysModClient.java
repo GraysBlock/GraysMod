@@ -1,9 +1,9 @@
-package graysblock.graysmod.client;
+package graysblock.graysmod;
 
 import graysblock.graysmod.block.GraysModBlocks;
-import graysblock.graysmod.client.gui.screen.GraysModScreenHandlerTypes;
-import graysblock.graysmod.client.gui.screen.ingame.KilnScreen;
-import graysblock.graysmod.client.gui.screen.ingame.PrismarineWorkbenchScreen;
+import graysblock.graysmod.screen.GraysModScreenHandlerTypes;
+import graysblock.graysmod.screen.ingame.KilnScreen;
+import graysblock.graysmod.screen.ingame.PrismarineWorkbenchScreen;
 import graysblock.graysmod.client.item.GraysModModelPredicates;
 import graysblock.graysmod.client.render.entity.BoulderingZombieEntityRenderer;
 import graysblock.graysmod.client.render.entity.CluckshroomEntityRenderer;
@@ -51,8 +51,8 @@ public class GraysModClient implements ClientModInitializer {
     }
 
     private void registerScreens() {
-        HandledScreens.register(GraysModScreenHandlerTypes.KILN_SCREEN_HANDLER, KilnScreen::new);
-        HandledScreens.register(GraysModScreenHandlerTypes.PRISMARINE_WORKBENCH_SCREEN_HANDLER, PrismarineWorkbenchScreen::new);
+        HandledScreens.register(GraysModScreenHandlerTypes.KILN, KilnScreen::new);
+        HandledScreens.register(GraysModScreenHandlerTypes.PRISMARINE_WORKBENCH, PrismarineWorkbenchScreen::new);
     }
 
     private void registerBlockRenderLayers() {

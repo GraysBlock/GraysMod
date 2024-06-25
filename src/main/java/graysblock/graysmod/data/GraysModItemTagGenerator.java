@@ -46,6 +46,8 @@ public class GraysModItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 
         getOrCreateTagBuilder(GraysModItemTags.VIALS)
                 .add(GraysModItems.VIAL_OF_RECOLLECTION)
-                .add(GraysModItems.VIAL_OF_SHADOWS);
+                .add(GraysModItems.VIAL_OF_SHADOWS)
+                .add(GraysModItems.VIAL_OF_TITANS)
+                .add(GraysModItems.VIAL_OF_SHRIMPS);
     }
 }

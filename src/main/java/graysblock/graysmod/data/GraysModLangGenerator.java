@@ -39,6 +39,7 @@ public class GraysModLangGenerator extends FabricLanguageProvider {
         translationBuilder.add(GraysModItems.TURTLE_TROUSERS, "Turtle Trousers");
         translationBuilder.add(GraysModItems.VIAL_OF_RECOLLECTION, "Vial of Recollection");
         translationBuilder.add(GraysModItems.VIAL_OF_SHADOWS, "Vial of Shadows");
+        translationBuilder.add(GraysModItems.VIAL_OF_SHRIMPS, "Vial of Shrimps");
         translationBuilder.add(GraysModItems.VIAL_OF_TITANS, "Vial of Titans");
         translationBuilder.add(GraysModItems.WIND_BOLT, "Wind Bolt");
 
@@ -50,6 +51,7 @@ public class GraysModLangGenerator extends FabricLanguageProvider {
 
         translationBuilder.add("effect.graysmod.magma_speed", "Magma Speed");
         translationBuilder.add("effect.graysmod.shadow_form", "Shadow Form");
+        translationBuilder.add("effect.graysmod.shrimp_form", "Shrimp Form");
         translationBuilder.add("effect.graysmod.titan_form", "Titan Form");
 
         translationBuilder.add(GraysModEntityTypes.BALL_OF_REPULSION_GEL, "Ball of Repulsion Gel");

@@ -44,6 +44,7 @@ public class GraysModModelGenerator extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) GraysModItems.TURTLE_TROUSERS);
         itemModelGenerator.register(GraysModItems.VIAL_OF_RECOLLECTION, Models.GENERATED);
         itemModelGenerator.register(GraysModItems.VIAL_OF_SHADOWS, Models.GENERATED);
+        itemModelGenerator.register(GraysModItems.VIAL_OF_SHRIMPS, Models.GENERATED);
         itemModelGenerator.register(GraysModItems.VIAL_OF_TITANS, Models.GENERATED);
         itemModelGenerator.register(GraysModItems.WIND_BOLT, Models.GENERATED);
 

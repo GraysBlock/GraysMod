@@ -3,12 +3,16 @@
   "package": "graysblock.graysmod.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AbstractBlockStateMixin",
     "EntityMixin",
     "GrindstoneScreenHandlerMixin",
     "GrindstoneScreenHandlerOutputMixin",
     "GrindstoneScreenHandlerSlotsMixin",
     "LivingEntityMixin",
-    "RecipeBookCategoryMixin"
+    "RecipeBookCategoryMixin",
+    "RecipeBookOptionsMixin",
+    "RecipeGridAlignerMixin",
+    "ServerWorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -16,6 +20,10 @@
   "client": [
     "CapeFeatureRendererMixin",
     "CatEntityRendererMixin",
-    "LivingEntityRendererMixin"
+    "ClientRecipeBookMixin",
+    "LivingEntityRendererMixin",
+    "RecipeBookGroupMixin",
+    "RecipeBookWidgetInvoker",
+    "RecipeBookWidgetMixin"
   ]
 }

@@ -38,6 +38,8 @@ public class GraysModItemGroups {
                     entries.add(GraysModItems.ECHO_VIAL);
                     entries.add(GraysModItems.VIAL_OF_RECOLLECTION);
                     entries.add(GraysModItems.VIAL_OF_SHADOWS);
+                    entries.add(GraysModItems.VIAL_OF_TITANS);
+                    entries.add(GraysModItems.VIAL_OF_SHRIMPS);
                     entries.add(GraysModItems.BOULDERING_ZOMBIE_SPAWN_EGG);
                     entries.add(GraysModItems.CLUCKSHROOM_SPAWN_EGG);
                 }).build());

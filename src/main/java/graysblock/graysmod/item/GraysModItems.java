@@ -5,6 +5,7 @@ import graysblock.graysmod.component.type.GraysModFoodComponents;
 import graysblock.graysmod.entity.GraysModEntityTypes;
 import graysblock.graysmod.item.vials.VialOfRecollectionItem;
 import graysblock.graysmod.item.vials.VialOfShadowsItem;
+import graysblock.graysmod.item.vials.VialOfShrimpsItem;
 import graysblock.graysmod.item.vials.VialOfTitansItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -33,6 +34,7 @@ public class GraysModItems {
     public static final Item TURTLE_TROUSERS = registerItem("turtle_trousers", new ArmorItem(GraysModArmorMaterials.TURTLE, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
     public static final Item VIAL_OF_RECOLLECTION = registerItem("vial_of_recollection", new VialOfRecollectionItem(new Item.Settings().maxCount(16).rarity(Rarity.RARE)));
     public static final Item VIAL_OF_SHADOWS = registerItem("vial_of_shadows", new VialOfShadowsItem(new Item.Settings().maxCount(16).rarity(Rarity.RARE)));
+    public static final Item VIAL_OF_SHRIMPS = registerItem("vial_of_shrimps", new VialOfShrimpsItem(new Item.Settings().maxCount(16).rarity(Rarity.RARE)));
     public static final Item VIAL_OF_TITANS = registerItem("vial_of_titans", new VialOfTitansItem(new Item.Settings().maxCount(16).rarity(Rarity.RARE)));
     public static final Item WIND_BOLT = registerItem("wind_bolt", new WindBoltItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
 

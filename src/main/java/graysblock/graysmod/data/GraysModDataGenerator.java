@@ -2,7 +2,6 @@ package graysblock.graysmod.data;
 
 import graysblock.graysmod.data.client.GraysModModelGenerator;
 import graysblock.graysmod.data.server.advancement.GraysModAdvancementGenerator;
-import graysblock.graysmod.data.server.advancement.GraysModAdvancementProviders;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.data.DataOutput;
@@ -30,7 +29,7 @@ public class GraysModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(GraysModEntityTypeTagGenerator::new);
 		pack.addProvider(GraysModLangGenerator::new);
 		pack.addProvider(GraysModRecipeGenerator::new);
-		pack.addProvider(toFactory(GraysModAdvancementProviders::createGraysModProvider, completableFuture));
+		pack.addProvider(GraysModAdvancementGenerator::new);
 	}
 
 	private static <T extends DataProvider> DataProvider.Factory<T> toFactory(

@@ -1,6 +1,6 @@
 package graysblock.graysmod.mixin;
 
-import graysblock.graysmod.data.server.advancement.CustomAdvancementGranters;
+import graysblock.graysmod.data.server.advancement.CustomAdvancementGranter;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -15,9 +15,8 @@ public class GrindstoneScreenHandlerOutputMixin {
 
     @Inject(method = "onTakeItem", at = @At("RETURN"))
     private void includeGoldenApple(PlayerEntity player, ItemStack stack, CallbackInfo ci) {
-        if(stack.isOf(Items.GOLDEN_APPLE) && !player.getWorld().isClient) {
-            ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity) player;
-            CustomAdvancementGranters.grantPureAbsurdityAdvancement(serverPlayerEntity);
+        if(stack.isOf(Items.GOLDEN_APPLE) && player instanceof ServerPlayerEntity serverPlayerEntity) {
+            CustomAdvancementGranter.grantPureAbsurdityAdvancement(serverPlayerEntity);
         }
     }
 }

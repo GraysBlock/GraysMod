@@ -1,7 +1,7 @@
-package graysblock.graysmod.client.gui.screen.ingame;
+package graysblock.graysmod.screen.ingame;
 
 import graysblock.graysmod.GraysMod;
-import graysblock.graysmod.client.gui.screen.KilnScreenHandler;
+import graysblock.graysmod.screen.KilnScreenHandler;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.ingame.AbstractFurnaceScreen;
